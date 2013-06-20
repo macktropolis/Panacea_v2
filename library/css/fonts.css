@@ -1,0 +1,29 @@
+/* -----------------------------------------------------------
+#  $$$$$$$$\                   $$\               
+#  $$  _____|                  $$ |              
+#  $$ |    $$$$$$\  $$$$$$$\ $$$$$$\    $$$$$$$\ 
+#  $$$$$\ $$  __$$\ $$  __$$\\_$$  _|  $$  _____|
+#  $$  __|$$ /  $$ |$$ |  $$ | $$ |    \$$$$$$\  
+#  $$ |   $$ |  $$ |$$ |  $$ | $$ |$$\  \____$$\ 
+#  $$ |   \$$$$$$  |$$ |  $$ | \$$$$  |$$$$$$$  |
+#  \__|    \______/ \__|  \__|  \____/ \_______/ 
+#                                                
+#                                                
+                                               
+Stylesheet: @Font-Face Styles
+@Default Stylesheet
+
+This is where we define any @font-face kits so we aren't
+limited to the standard system fonts.
+
+Don't get carried away. Keep it to one or two custom fonts.
+
+I've taken the liberty to include Pictos, an icon font.
+----------------------------------------------------------- */
+@font-face {
+	font-family: 'Pictos';
+	src: url('../fonts/pictos/pictos-web.eot');
+	src: local('☺'), url('../fonts/pictos/pictos-web.woff') format('woff'), url('../fonts/pictos/pictos-web.ttf') format('truetype'), url('../fonts/pictos/pictos-web.svg#webfontphKv1xv9') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

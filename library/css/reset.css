@@ -1,0 +1,361 @@
+/*
+Version: 1.1
+Date: 18 Dec 2008
+
+reset.css is a modified version of tripoli.base.css.
+
+Tripoli is a generic CSS standard for HTML rendering. 
+Copyright (C) 2007 David Hellsing
+http://devkick.com/lab/tripoli/
+*/
+
+/*
+_______________________________
+RESET */
+
+*
+{
+	text-decoration:none;
+	outline:none;
+	margin:0;
+	padding:0;
+	}
+
+code,kbd,samp,pre,tt,var,textarea,input,select,isindex,listing,xmp,plaintext
+{
+	font:inherit;
+	white-space:normal;
+	}
+
+a,img,a img,iframe,form,abbr,acronym,object,applet,table,a abbr,a acronym
+{
+	border-width:0;
+	}
+
+dfn,i,cite,var,address,em
+{
+	font-style:normal;
+	}
+
+th,b,strong,h1,h2,h3,h4,h5,h6,dt
+{
+	font-weight:normal;
+	}
+
+caption,th,td
+{
+	text-align:left;
+	}
+
+html
+{
+	color:black;
+	line-height:1;
+	font-family:'Myriad Pro', tahoma, verdana, arial, sans-serif; 
+	}
+
+/* \*/
+
+html
+{
+	font-family:'Myriad Pro', tahoma, verdana, arial, sans-serif; 
+	}
+
+/* */
+
+q
+{
+	quotes:"\201C""\201D""\2018""\2019";
+	}
+
+ul,ol,dir,menu
+{
+	list-style:none;
+	}
+
+sub,sup
+{
+	vertical-align:baseline;
+	}
+
+a
+{
+	color:inherit;
+	}
+
+/*
+_______________________________
+DISABLE DEPRECATED HTML */
+
+font,basefont
+{
+	color:inherit;
+	font:inherit;
+	font-size:100%;
+	}
+
+
+center,*[align]
+{
+	text-align:inherit;
+	}
+
+s,strike,u
+{
+	text-decoration:inherit;
+	}
+
+img
+{
+	border:none;
+	margin:0;
+	}
+
+ol
+{
+	list-style-type:decimal;
+	}
+
+ul 
+{ 
+	list-style:none; 
+	}
+
+li 
+{ 
+	margin:0;
+	padding:0; 
+	}
+
+body
+{
+	background-color:transparent;
+	}
+
+table 
+{ 
+	margin:0; 
+	padding:0; 
+	border-collapse:collapse; 
+	}
+
+tr,th,td
+{
+	width:auto;
+	height:auto;
+	background-color:transparent;
+	padding:5px;
+	vertical-align:inherit;
+	border:none;
+	}
+
+table[border],.content table[border]
+{
+	border-collapse:collapse;
+	border-spacing:0;
+	}
+
+nobr
+{
+	white-space:normal;
+	}
+
+marquee
+{
+	overflow:visible;
+	-moz-binding:none;
+	}
+
+blink
+{
+	text-decoration:none;
+	}
+
+/*
+_______________________________
+GENERAL */
+
+/* 
+	WHY SET THE * ATTRIBUTE FONT-SIZE TO 62.5%? 
+
+	This makes it easy to use "ems" for font size instead of "px".  
+	This avoids a IE6/Win bug which prevents users from resizing fonts sized using pixels. 
+	62.6% sets 1em = 10px.  EXAMPLES: 1.2em = 12px, .8em = 8px 
+*/
+
+html,
+body
+{
+	font-size: 100%;
+	}
+
+a
+{
+	text-decoration:underline;
+	}
+
+strong,th,thead td,h1,h2,h3,h4,h5,h6,dt
+{
+	font-weight:bold;
+	}
+
+cite,em,dfn
+{
+	font-style:italic;
+	}
+
+code,kbd,samp,pre,tt,var,input[type='text'],input[type='password'],textarea
+{
+//	font-size:100%;
+//	font-family:mono-space,monospace;
+	}
+
+p 
+{
+	line-height:150%;
+	}
+
+pre
+{
+	white-space:pre;
+	}
+
+pre *
+{
+//	font-size:100%;
+	white-space:pre;
+	}
+
+del
+{
+	text-decoration:line-through;
+	}
+
+ins,dfn
+{
+	border-bottom:1px solid black;
+	}
+
+small,sup,sub
+{
+//	font-size:85%;
+	}
+
+big
+{
+//	font-size:125%;
+	line-height:80%;
+	}
+
+abbr,acronym
+{
+	text-transform:uppercase;
+//	font-size:85%;
+	letter-spacing:.1em;
+	}
+
+abbr[title],acronym[title],dfn[title]
+{
+	cursor:help;
+	border-bottom:1px dotted black;
+	}
+
+sup
+{
+	vertical-align:super;
+	}
+
+sub
+{
+	vertical-align:sub;
+	}
+
+blockquote
+{
+	padding-left:2.2em;
+	}
+
+hr
+{
+	display:none; /* We will re-reset it later for content */
+	}
+
+:lang(af),:lang(nl),:lang(pl)
+{
+	quotes:'\201E' '\201D' '\201A' '\2019';
+	}
+
+:lang(bg),:lang(cs),:lang(de),:lang(is),:lang(lt),:lang(sk),:lang(sr),:lang(ro)
+{
+	quotes:'\201E' '\201C' '\201A' '\2018';
+	}
+
+:lang(da),:lang(hr)
+{
+	quotes:'\00BB' '\00AB' '\203A' '\2039';
+	}
+
+:lang(el),:lang(es),:lang(sq),:lang(tr)
+{
+	quotes:'\00AB' '\00BB' '\2039' '\203A';
+	}
+
+:lang(en-GB)
+{
+	quotes:'\2018' '\2019' '\201C' '\201D';
+	}
+
+:lang(fi),:lang(sv)
+{
+	quotes:'\201D' '\201D' '\2019' '\2019';
+	}
+
+:lang(fr)
+{
+	quotes:'\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+	}
+
+*[lang|='en'] q:before
+{
+	content:'\201C';
+	}
+
+*[lang|='en'] q:after
+{
+	content:'\201D';
+	}
+
+*[lang|='en'] q q:before
+{
+	content:'\2018';
+	}
+
+*[lang|='en'] q q:after
+{
+	content:'\2019';
+	}
+
+input,select,button
+{
+	cursor:pointer;
+	}
+
+input[type='text'],input[type='password']
+{
+	cursor:text;
+	}
+
+input[type='hidden']
+{
+	display:none;
+	}
+
+/* apply a natural box layout model to all elements */
+* { 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	}
+
+/*
+_______________________________
+END */

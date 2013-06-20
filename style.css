@@ -1,0 +1,14 @@
+/*  
+Theme Name: Panacea (Rename Me!)
+Theme URI: http://mackrichardson.com
+Description: An HTML5 WordPress Starter Theme by Mack Richardson
+Version: 2.0
+Author: Mack Richardson
+Author URI: http://mackrichardson.com/
+Tags:
+*/
+
+@import url("library/css/reset.css");
+@import url("library/css/fonts.css");
+@import url("library/css/styles.css");
+
