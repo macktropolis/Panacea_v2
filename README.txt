@@ -1,6 +1,9 @@
 NOTES
 ---------------------------
-DO NOT EDIT styles.min.css. Make all changes to styles.css, use YUIcompress to minify the file before uploading to the server.
+Before going into production:
+1. Use YUIcompress to compress styles.css. An excellent online YUI compressor can be found at http://refresh-sf.com/yui/
+2. Insert the compressed CSS into styles.min.css
+3. Change style.css to use styles.min.css as the main stylesheet
 
 CHANGE LOG
 ---------------------------

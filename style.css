@@ -11,4 +11,14 @@ Tags:
 @import url("library/css/reset.css");
 @import url("library/css/fonts.css");
 @import url("library/css/styles.css");
+/* 
+Replace the @import line above with
+this one to use the compressed version
+of the styles.css stylesheet.
+
+Need a YUIcompressor? 
+Visit http://refresh-sf.com/yui/
+
+@import url("library/css/styles.min.css"); 
+*/
 
