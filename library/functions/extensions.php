@@ -17,7 +17,7 @@ function panacea_ahoy() {
     add_filter('gallery_style', 'panacea_gallery_style');
 
     // adding sidebars to Wordpress (these are created in functions.php)
-    add_action( 'widgets_init', 'panacea_register_sidebars' );
+    // add_action( 'widgets_init', 'panacea_register_sidebars' );
 
     // cleaning up random code around images
     add_filter('the_content', 'panacea_filter_ptags_on_images');
