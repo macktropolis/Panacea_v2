@@ -1,0 +1,96 @@
+@media only print {
+
+/* -----------------------------------------------------------                                            
+Stylesheet: Print
+@Print
+
+This is the print stylesheet. There's probably not a lot
+of reasons to edit this stylesheet. If you want to
+though, go for it.
+----------------------------------------------------------- */
+html {
+  width:100%;
+  }
+
+body {
+  margin:0;
+  padding:0;
+  font-size:12pt;
+  line-height:16pt;
+  background-color:#fff;
+  color:#000;
+  }
+
+/* expand out abbreviations */
+#bd abbr[title]:after, acronym[title]:after {
+  content:"(" attr(title) ")"; 
+  background-color:#fff; 
+  color:#cccccc;
+  }
+
+/* Images ------------------------------------------------- */
+img {
+  display: block;
+  border: 0;
+  }
+
+iframe,
+.h_iframe,
+video {
+  display: none;
+}
+
+/* Layout ------------------------------------------------- */
+#wrap {
+  width:auto !important;
+  }
+
+#focus {
+  color: #000;
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+  }
+  
+/* Suppressed divs for printing --------------------------- */
+nav, 
+aside.site, 
+form, 
+.commentlist .author {
+  display:none !important;
+  }
+
+/* Headers ------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  }
+
+/* Links -------------------------------------------------- */
+a, a:link, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  }
+
+/* reveal link URLs or use the neater 
+http://alistapart.textdrive.com/articles/improvingprint
+----------------------------------------------------------- */
+a:after, a:visited:after {
+  content:" ("attr(href)")"; 
+  font-size: 80%; 
+  color: #303030;
+  }
+
+h1 a:after, h2 a:after, h3 a:after, h4 a:after, h5 a:after, h6 a:after {
+  display: block;
+  }
+
+a img {
+  border-width:0;
+  }
+
+.byline a {
+  display: none;
+  }
+  
+}/* DON'T DELETE THIS BRACKET */

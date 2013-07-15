@@ -1,0 +1,61 @@
+@media only screen and (min-width: 960px) {
+
+/* -----------------------------------------------------------
+Stylesheet: Tablet & Small Desktop
+@960px
+	
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources.
+----------------------------------------------------------- */
+
+/* @Blockquotes ---------------------------------------------- */
+blockquote {
+	border-left: 5px solid #cccccc;
+	font-size: 2.250em;
+	padding: 0.625em 0 0.625em 0.625em;
+}
+
+/* @Navigation - Site ------------------------------------- */
+nav.site li {	width: auto; }
+nav.site ul ul { width: auto; }
+nav.site ul ul li { float: left; }
+
+nav.site ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+/* @Main Subarea --------------------------------------------- */
+#main {
+	float: left;
+	width: 69%;
+}
+
+/* @Sidebar (Aside) - Site ----------------------------------- */
+aside.site {
+	float: right;
+	width: 30%;
+}
+
+aside.site .widget {
+	float: none;
+	width: 100%;
+}
+
+/* @Responsive Frame for Video ------------------------------- */
+body.home .h_iframe,
+body.archive .h_iframe,
+body.search .h_iframe {
+	background-color: none;
+	border: 0;
+	display: block;
+	float: right;
+	height: auto;
+	margin: 0 0 1.500em 0.625em;
+	padding: 0;
+	width: 45%;	
+}
+
+} /* DON'T DELETE THIS BRACKET */

@@ -29,6 +29,7 @@
 	
 	<!-- Stylesheets. -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/screen-ie.css" type="text/css" media="screen" />

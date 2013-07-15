@@ -1,0 +1,186 @@
+@media only screen and (min-width: 640px) {
+
+/* -----------------------------------------------------------
+Stylesheet: 640px and Up
+@640px
+
+This stylesheet is loaded for larger mobile devices.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.less styles.
+----------------------------------------------------------- */
+	
+/* @Focus Area -------------------------------------------- */	
+#focus { padding-top: 0;}
+
+/* @Header - Site ----------------------------------------- */	
+header.site {	
+	border-bottom: none;	
+	padding-top: 0;
+	}
+
+header.site > div {
+	height: 100%;
+	text-align: left;
+	width: 50%;
+}
+
+header.site hgroup { text-align: left; }
+header.site hgroup p {	display: block;	}
+header.site a.menu {	display: none;	}
+
+/* @Navigation - Site ------------------------------------- */
+nav.site {
+	background-color: #dddddd;
+	display: block;
+	margin: 0 auto 2.000em auto;
+	position: relative;
+	width: 100%;
+}
+
+nav.site button { display: none }
+
+nav.site ul {
+	background: transparent;
+	clear: both;
+	display: block;
+	list-style: none;
+	margin: 0 auto;
+	max-height: 30.000em;
+	overflow: visible;
+	padding: 0;
+	position: relative;
+}
+	
+nav.site li {
+	float: left;
+	padding: 0;
+	position: relative;
+	width: 50%;
+}
+
+nav.site a {
+	padding-left: 1.625em;
+	padding-right: 1.625em;
+	text-align: center;
+}
+
+nav.site a:hover {	color: #333333;	}
+
+nav.site ul ul a:hover {	color: #ffffff;	}
+
+nav.site ul ul {
+	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.80);
+	-moz-box-shadow: 0 0.188em 0.188em rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0.188em 0.188em rgba(0,0,0,0.2);
+	box-shadow: 0 0.188em 0.188em rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	margin: 0;
+	max-height: 30.000em;
+	position: absolute;
+	top: 100%;
+	left: 0.063em;
+	width: 100%;
+	z-index: 99999;
+}
+
+nav.site ul ul li {
+	float: none;
+	width: 100%;
+}
+
+nav.site ul ul ul {
+	left: 0;
+	top: 100%;
+}
+
+nav.site ul ul a {
+	font-weight: normal;
+	height: auto;
+	line-height: 150%;
+	min-width: 11.250em;
+}
+		
+nav.site ul li:hover > ul {	display: block;	}
+	
+nav.site .current-menu-item > a,
+nav.site .current-menu-ancestor > a,
+nav.site .current_page_item > a,
+nav.site .current_page_ancestor > a {	color: #2ca0ca;	}
+
+.nav ul {	overflow: visible;	}
+
+/* @Featured Image ----------------------------------------- */
+.h_bgdiv div.feature {
+	-moz-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url('../images/desaturate.svg#greyscale');
+	filter: gray;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.h_bgdiv a:hover div.feature {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
+  top:-2.5%;
+  right:-2.5%;
+  bottom:-2.5%;
+  left:-2.5%;
+  width:105%;
+  height:105%;
+}
+
+/* @Exceptions --------------------------------------------- */
+body.single .h_bgdiv {
+	float: none;
+	margin-left: 0;
+	width: 100%;	
+}
+
+/* @Sidebar (Aside) - Site --------------------------------- */
+aside.site .widget {
+	float: left;
+	padding: 0.625em 0;
+	width: 49%;
+}
+
+aside.site .widget:nth-child(even) {	float: right;	}
+
+aside.site .widget_search.widget {
+	float: none;
+	padding: 0;
+	width: 100%;
+}
+
+aside.site .widget ul li a:hover {	background-color: #fafafa;	}
+
+aside.site .widget_twitter h4.widgettitle a:hover {	color: inherit;	}
+
+/* @Comment List --------------------------------------------- */
+#inner-content .commentlist .comment-author { padding-top: 0; }
+#inner-content .commentlist .commentmetadata { padding-left: 18%; }
+
+#inner-content .commentlist .comment p,
+#inner-content .commentlist .comment .reply { padding-left: 18%; }
+
+.commentlist .comment-author img {
+	border: 0;
+	box-shadow: none;
+	display: block;
+	height: auto;
+	margin: 0.313em auto;
+	padding: 0;
+	width: 80%
+}
+
+} /* DON'T DELETE THIS BRACKET */

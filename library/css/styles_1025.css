@@ -1,0 +1,37 @@
+@media only screen and (min-width: 1025px) {
+
+/* -----------------------------------------------------------
+Stylesheet: Desktops
+@1025px
+	
+This is the desktop size. It's larger than an iPad so it 
+will only be seen on the Desktop. 
+----------------------------------------------------------- */
+
+/* @Focus Area -------------------------------------------- */
+#focus {
+	margin: 0 auto;
+	/*
+	Ok, Ok. This design is responsive to a point. I freeze the
+	maximum width of the site at 1200px. Why? Well, for this
+	starter theme anything wider isn't needed.
+	
+	However, if you want to include a grid solution with 3, 4 or more
+	columns could make use of very wide displays. If you need a full
+	width layout, just delete the max-width: 1200px tag below.
+	*/
+	max-width: 75.000em;
+	width: 90%;
+}
+
+/* @Featured Image ---------------------------------------- */
+.h_bgdiv {
+	display: block;
+	height: auto;
+	float: right;
+	margin: 0 0 0.100em 1.500em;
+	position: relative;
+	width: 50%;	
+}
+
+} /* DON'T DELETE THIS BRACKET */

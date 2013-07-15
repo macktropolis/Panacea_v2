@@ -11,6 +11,17 @@ Tags:
 @import url("library/css/reset.css");
 @import url("library/css/fonts.css");
 @import url("library/css/styles.css");
+
+@import url("library/css/styles_640.css");
+@import url("library/css/styles_960.css");
+@import url("library/css/styles_1025.css");
+@import url("library/css/styles_1240.css");
+@import url("library/css/styles_retina.css");
+@import url("library/css/styles_iphone5.css");
+
+
+@import url("library/css/styles_print.css");
+
 /* 
 Replace the @import line above with
 this one to use the compressed version

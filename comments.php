@@ -20,33 +20,11 @@
 
 <?php if ($comments) : ?>
 <!-- Begin the Comment List. -->
-<section class="commentlist">	
-  
+<section>	
   <h6 class="title"><?php comments_number('0 Comments', '1 Comment', '% Comments' );?> on &#8220;<?php the_title(); ?>&#8221;</h6>
-
-	<?php foreach ($comments as $comment) : ?>
-	<article class="singlecomment clearfix">	<!-- begin: single comment wrapper -->
-		
-		<div class="author"><!-- begin: author content -->
-			<?php echo get_avatar( $comment, 62 ); ?>					
-		</div><!-- end: author content -->
-		
-		<div class="comment"><!-- begin: comment content -->
-			<p>On <?php comment_date() ?>, <?php comment_author_link() ?> said:</p>
-					
-			<?php if ($comment->comment_approved == '0') : ?>						
-				<p><i>Your comment is awaiting moderation.</i></p>
-			<?php endif; ?>
-				
-			<?php comment_text() ?>
-				
-			<p><?php edit_comment_link('Edit this Comment','',' &raquo;'); ?></p>
-		</div><!-- end: comment content -->
-
-	</article><!-- end: single comment wrapper -->
-				
-	<?php endforeach; /* end for each comment */ ?>
-
+	<ul class="commentlist">
+		<?php wp_list_comments( array( 'format' => 'html5', 'avatar_size' => '128' ) ); ?>
+	</ul>
 </section>
 <!-- End the Comment List. -->
 	
